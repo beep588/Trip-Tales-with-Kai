@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trip Tales with Kai</title>
+  <style>
+    :root {
+      --navy: #18364a;
+      --blue: #287c91;
+      --sand: #fff8ec;
+      --ink: #263238;
+      --muted: #64747a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--sand);
+      color: var(--ink);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 64px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #287c91, #65b5a8);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 8vw, 4rem);
+    }
+
+    header p {
+      margin: 12px auto 0;
+      max-width: 550px;
+      font-size: 1.15rem;
+    }
+
+    nav {
+      padding: 14px;
+      text-align: center;
+      background: var(--navy);
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 36px auto;
+    }
+
+    section, article {
+      margin-bottom: 24px;
+      padding: 24px;
+      border-radius: 16px;
+      background: white;
+      box-shadow: 0 4px 16px #18364a12;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .photo-placeholder {
+      display: grid;
+      min-height: 190px;
+      margin: 16px 0;
+      place-items: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #d8f0e9, #f8dfb2);
+      color: var(--navy);
+      font-size: 3rem;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding: 24px;
+      text-align: center;
+      color: white;
+      background: var(--navy);
+    }
+
+    @media (max-width: 500px) {
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      section, article {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trip Tales with Kai</h1>
+    <p>Stories, photos, and happy memories from my trip—shared with my family and friends!</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="#stories">Trip stories</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <main>
+    <section id="stories">
+      <h2>My Trip Stories</h2>
+      <p>Come back to read about what I see, do, and discover on my trip!</p>
+    </section>
+
+    <article>
+      <p class="date">My first trip post</p>
+      <h2>The Adventure Begins!</h2>
+      <div class="photo-placeholder" aria-label="Photo placeholder">📸</div>
+      <p>
+        Hi, family and friends! Welcome to my blog. I’m excited to share my trip
+        with you. Today, I’m looking forward to new adventures, fun moments, and
+        making lots of memories.
+      </p>
+      <p><strong>Today’s favorite moment:</strong> Add your favorite moment here!</p>
+    </article>
+
+    <section id="about">
+      <h2>About This Blog</h2>
+      <p>
+        I made this blog to share some of my trip with the people I care about.
+        Thanks for following along!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Thanks for reading Trip Tales with Kai! 🌴</p>
+  </footer>
+</body>
+</html>
